@@ -1,119 +1,108 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Project 2 Website</title>
-    <style>
-        /* Base Styles for Cleanliness and Readability */
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            background-color: #f8f9fa; /* Very light background */
-            color: #343a40; /* Dark text for contrast */
-            line-height: 1.6;
-            min-height: 100vh;
-        }
+/* Base Styles for Cleanliness and Readability */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* Very light background */
+    color: #343a40; /* Dark text for contrast */
+    line-height: 1.6;
+    min-height: 100vh;
+}
 
-        /* 1. Header and Title Centering (Part 1) */
-        .header-container {
-            background-color: #007bff; /* Primary blue for header */
-            padding: 30px 20px;
-            text-align: center; /* Centers the tagline and title if they are inline/inline-block */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+/* 1. Header and Title Centering (Part 1) */
+.header-container {
+    background-color: #007bff; /* Primary blue for header */
+    padding: 30px 20px;
+    text-align: center; /* Centers the tagline and title if they are inline/inline-block */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        #main-title {
-            color: white; /* Title color changed to white for high contrast */
-            font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive title size */
-            margin-bottom: 5px;
-            font-weight: 700;
-        }
+#main-title {
+    color: white; /* Title color changed to white for high contrast */
+    font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive title size */
+    margin-bottom: 5px;
+    font-weight: 700;
+}
 
-        .tagline {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: clamp(0.9rem, 2vw, 1.2rem);
-            margin-top: 0;
-        }
+.tagline {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    margin-top: 0;
+}
 
-        /* Navigation Styling */
-        nav {
-            background-color: #343a40; /* Dark navigation bar */
-            padding: 10px 0;
-        }
+/* Navigation Styling */
+nav {
+    background-color: #343a40; /* Dark navigation bar */
+    padding: 10px 0;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex; /* Use Flexbox for centering navigation items */
-            justify-content: center; /* Center items horizontally */
-            flex-wrap: wrap;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use Flexbox for centering navigation items */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+}
 
-        nav li {
-            margin: 0 20px;
-        }
+nav li {
+    margin: 0 20px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 5px 0;
-            transition: color 0.3s;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
 
-        nav a:hover {
-            color: #ffc107; /* Gold highlight on hover */
-        }
+nav a:hover {
+    color: #ffc107; /* Gold highlight on hover */
+}
 
-        /* 2. Image and Caption Centering (Part 2) */
-        .content-container {
-            padding: 40px 20px;
-            text-align: center; /* Centers the image since it's an inline element */
-        }
+/* 2. Image and Caption Centering (Part 2) */
+.content-container {
+    padding: 40px 20px;
+    text-align: center; /* Centers the image since it's an inline element */
+}
 
-        #main-image {
-            max-width: 90%; /* Responsive width */
-            height: auto;
-            display: block; /* Make it a block element to use margin: auto */
-            margin: 0 auto; /* Crucial for horizontal centering */
-            border-radius: 12px; /* Rounded corners */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow for depth */
-            border: 5px solid #ffffff; /* White border to lift it off the background */
-            outline: 2px solid #007bff; /* Secondary outline color */
-        }
-        
-        /* Image Caption Styling (Assuming the next text is the caption) */
-        .image-caption {
-            display: block;
-            margin-top: 15px;
-            font-style: italic;
-            color: #6c757d;
-            font-size: 0.9rem;
-            text-align: center; /* Ensure caption is centered */
-        }
+#main-image {
+    max-width: 90%; /* Responsive width */
+    height: auto;
+    display: block; /* Make it a block element to use margin: auto */
+    margin: 0 auto; /* Crucial for horizontal centering */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow for depth */
+    border: 5px solid #ffffff; /* White border to lift it off the background */
+    outline: 2px solid #007bff; /* Secondary outline color */
+}
+
+/* Image Caption Styling (Assuming the next text is the caption) */
+.image-caption {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-align: center; /* Ensure caption is centered */
+}
 
 
-        /* 3. About Project Section Centering and Aesthetics */
-        .about-project {
-            max-width: 700px; /* Constrain width for better readability */
-            margin: 40px auto; /* Centers the block itself */
-            padding: 30px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid #007bff; /* Feature line for emphasis */
-        }
+/* 3. About Project Section Centering and Aesthetics */
+.about-project {
+    max-width: 700px; /* Constrain width for better readability */
+    margin: 40px auto; /* Centers the block itself */
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #007bff; /* Feature line for emphasis */
+}
 
-        .section-title {
-            text-align: center;
-            color: #007bff;
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-    </style>
-</head>
-</body>
-</html>
+.section-title {
+    text-align: center;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
