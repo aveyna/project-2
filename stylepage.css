@@ -115,35 +115,5 @@
         }
     </style>
 </head>
-<body>
-    <!-- Header with Centered Title -->
-    <div class="header-container">
-        <h1 id="main-title">WELCOME TO OUR LIS 500 PROJECT WEBSITE</h1>
-        <p class="tagline">Code the Future. Include Everyone.</p>
-    </div>
-
-    <!-- Centered Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Tech Hero</a></li>
-        </ul>
-    </nav>
-
-    <!-- Content Container with Centered Image -->
-    <div class="content-container">
-        <!-- Replace 'placeholder.png' with your actual image path -->
-        <img src="placeholder.png" alt="Diversity in Tech" id="main-image">
-        <!-- Assuming this text acts as your main caption -->
-        <p class="image-caption">Our team is committed to advancing diversity and inclusivity through technology.</p>
-    </div>
-
-    <!-- Centered About Project Section -->
-    <div class="about-project">
-        <h2 class="section-title">About Our Project</h2>
-        <p>This project is about power and how we can advocate for diversity and inclusivity through technology. We are a team of students passionate about digital inclusion and coding for social good. Our goal is to create resources that empower others to build a more equitable digital world. Get to know us more on <a href="#">About Us</a>.</p>
-    </div>
 </body>
 </html>
