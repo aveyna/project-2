@@ -116,3 +116,27 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
+
+about-preview {
+    max-width: 700px; /* Constrain width for better readability */
+    margin: 40px auto; /* Crucial: Centers the section block itself */
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #007bff; /* Feature line for emphasis */
+}
+
+.about-preview h2 {
+    text-align: center;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.about-preview p {
+    text-align: center;
+    padding: 0 10px; 
+    font-size: 1.5rem; /* UPDATED FONT SIZE for index.html text */
+    line-height: 1.2;
