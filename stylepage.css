@@ -1,58 +1,61 @@
-/* Base Styles for Cleanliness and Readability */
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background-color: #f8f9fa; /* Very light background */
-    color: #343a40; /* Dark text for contrast */
+    background-color: #f8f9fa; /* Light background for a clean look */
+    color: #343a40;
     line-height: 1.6;
     min-height: 100vh;
 }
 
-/* 1. Header and Title Centering (Part 1) */
-.header-container {
-    background-color: #007bff; /* Primary blue for header */
+
+.page-header {
+    background-color: #007bff; 
     padding: 30px 20px;
-    text-align: center; /* Centers the tagline and title if they are inline/inline-block */
+    text-align: center; /* Crucial: Centers H1, H2, and the image (which are now centered within the header) */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#main-title {
-    color: white; /* Title color changed to white for high contrast */
-    font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive title size */
+.page-header h1 {
+    color: white; /* Title color set to white */
+    font-size: clamp(1.5rem, 4vw, 3rem);
     margin-bottom: 5px;
     font-weight: 700;
 }
 
-.tagline {
+.page-header h2 {
     color: rgba(255, 255, 255, 0.9);
     font-size: clamp(0.9rem, 2vw, 1.2rem);
     margin-top: 0;
+    margin-bottom: 20px; /* Space between tagline and navigation */
 }
 
-/* Navigation Styling */
+/* --- Navigation Styling (Flexbox for reliable centering) --- */
 nav {
-    background-color: #343a40; /* Dark navigation bar */
-    padding: 10px 0;
+    margin: 10px auto 20px auto; 
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use Flexbox for centering navigation items */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap;
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Centers the navigation links */
+    background-color: #343a40; /* Darker bar for visibility */
+    border-radius: 8px;
+    display: inline-flex; /* Use inline-flex so the dark background hugs the links */
 }
 
 nav li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 5px 0;
+    padding: 10px 15px; /* Added more padding for a better look */
+    display: block;
     transition: color 0.3s;
 }
 
@@ -60,38 +63,21 @@ nav a:hover {
     color: #ffc107; /* Gold highlight on hover */
 }
 
-/* 2. Image and Caption Centering (Part 2) */
-.content-container {
-    padding: 40px 20px;
-    text-align: center; /* Centers the image since it's an inline element */
-}
-
-#main-image {
-    max-width: 90%; /* Responsive width */
+/* --- Image Centering and Styling --- */
+.page-header img {
+    max-width: 90%; /* Ensure responsiveness */
     height: auto;
-    display: block; /* Make it a block element to use margin: auto */
-    margin: 0 auto; /* Crucial for horizontal centering */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow for depth */
-    border: 5px solid #ffffff; /* White border to lift it off the background */
-    outline: 2px solid #007bff; /* Secondary outline color */
-}
-
-/* Image Caption Styling (Assuming the next text is the caption) */
-.image-caption {
-    display: block;
-    margin-top: 15px;
-    font-style: italic;
-    color: #6c757d;
-    font-size: 0.9rem;
-    text-align: center; /* Ensure caption is centered */
+    display: block; /* Very important: makes margin: auto work */
+    margin: 20px auto 0 auto; /* Crucial for centering block-level images */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border: 5px solid white; /* Adds a nice white frame */
 }
 
 
-/* 3. About Project Section Centering and Aesthetics */
-.about-project {
+.about-preview {
     max-width: 700px; /* Constrain width for better readability */
-    margin: 40px auto; /* Centers the block itself */
+    margin: 40px auto; /* Crucial: Centers the section block itself */
     padding: 30px;
     background-color: white;
     border-radius: 8px;
@@ -99,10 +85,15 @@ nav a:hover {
     border-left: 5px solid #007bff; /* Feature line for emphasis */
 }
 
-.section-title {
+.about-preview h2 {
     text-align: center;
     color: #007bff;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 1.8rem;
+}
+
+.about-preview p {
+    text-align: center; /* THIS CENTERS THE CAPTION/PARAGRAPH TEXT */
+    padding: 0 10px; 
 }
