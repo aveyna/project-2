@@ -7,18 +7,18 @@
 /* --- Body --- */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #f8f9fa; /* Very light gray */
+    color: #343a40; /* Dark text */
     line-height: 1.8;
-    font-size: 18px;  /* Slightly larger base font */
+    font-size: 18px;
     min-height: 100vh;
 }
 
-/* --- Header --- */
+/* --- Header (Blue Bar) --- */
 .page-header {
-    background-color: #007bff;
+    background-color: #007bff; /* Primary Blue */
     padding: 30px 20px;
-    text-align: center;
+    text-align: center; /* Centers H1, H2, and Nav */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,12 +48,8 @@ nav ul {
     margin: 0;
     display: inline-flex;
     justify-content: center;
-    background-color: #343a40;
+    background-color: #343a40; /* Darker background for nav bar */
     border-radius: 8px;
-}
-
-nav li {
-    margin: 0 10px;
 }
 
 nav a {
@@ -62,69 +58,119 @@ nav a {
     font-weight: 600;
     padding: 12px 20px;
     display: block;
-    font-size: 1.3rem;  /* bigger! */
+    font-size: 1.3rem; /* Larger navigation text */
     transition: color 0.3s, transform 0.2s, background 0.2s;
     border-radius: 6px;
 }
 
 nav a:hover {
-    color: #ffc107;
-    background: rgba(255, 255, 255, 0.1); /* subtle background highlight */
+    color: #ffc107; /* Yellow highlight */
+    background: rgba(255, 255, 255, 0.1);
     transform: scale(1.08);
 }
 
-/* --- Header Image --- */
+/* --- Header Image (Used on index.html) --- */
 .page-header img {
     max-width: 70%;
     height: auto;
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 0 auto; /* Centers the image */
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border: 5px solid white;
 }
 
 
-.section {
-    max-width: 800px;
-    margin: 40px auto;
+/* --- Shared Main Content Wrapper (Used on techhero.html) --- */
+.content-text {
+    max-width: 900px;
+    margin: 40px auto; /* CENTERS THE ENTIRE HERO PROFILE SECTION */
     padding: 30px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-left: 6px solid #007bff;
-    text-align: center;
+    border-top: 6px solid #007bff;
 }
 
-.section h2 {
+.content-text h2, 
+.content-text h3 {
     color: #007bff;
     font-size: 2rem;
     margin-bottom: 15px;
+    text-align: center; /* Centers titles within the content block */
 }
 
-.section p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+/* Style for paragraph text in the content areas */
+.content-text p {
+    font-size: 1.5rem; /* Larger text size */
+    margin: 20px 0;
+    line-height: 1.4;
+    text-align: justify; /* Makes text look professional */
+    padding: 0 20px;
 }
 
-/* --- Footer --- */
-footer {
-    background: #343a40;
-    color: white;
-    padding: 15px;
-    margin-top: 40px;
+
+/* --- Tech Hero Page Specific Image & Links --- */
+.content-text .hero-image img {
+    max-width: 400px; /* Constrain image size */
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto; /* Centers the image */
+    border-radius: 50%; /* Make it circular for a profile photo */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content-text .caption {
+    margin-bottom: 30px;
+}
+
+/* Centering the links list */
+.content-text .links {
     text-align: center;
-    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
-about-preview {
-    max-width: 700px; /* Constrain width for better readability */
-    margin: 40px auto; /* Crucial: Centers the section block itself */
+.content-text .links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.content-text .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block; /* Allows the list to be centered */
+}
+
+.content-text .links li {
+    margin: 10px 0;
+    text-align: left; /* Aligns list items to the left within the centered block */
+}
+
+.content-text .links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.content-text .links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* --- Index.html Specific Styles (About Our Project) --- */
+
+.about-preview {
+    max-width: 700px;
+    margin: 40px auto; /* Centers the section block itself */
     padding: 30px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #007bff; /* Feature line for emphasis */
+    border-left: 5px solid #007bff;
 }
 
 .about-preview h2 {
@@ -137,6 +183,7 @@ about-preview {
 
 .about-preview p {
     text-align: center;
-    padding: 0 10px; 
-    font-size: 1.5rem; /* UPDATED FONT SIZE for index.html text */
-    line-height: 1.2;
+    padding: 0 10px;    
+    font-size: 1.5rem; /* Large font size */
+    line-height: 1.2; 
+}
