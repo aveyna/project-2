@@ -1,1 +1,12 @@
+<section id="about-team" style="font-family: sans-serif; padding: 20px;">
+  <h2> About the Team</h2>
+  <p> We are a passionate about creating inclusivity and diversity in tech.</p>
 
+  <h3> Team Members</h3>
+  <ul>
+    <li><strong>Aisyah Hafizi</strong> – Aisyah Sofea Hafizi is a junior at UW–Madison majoring in Economics and Information Science, with a minor in Data Science. Passionate about the intersection of economics and AI, she enjoys applying data to real-world challenges and is currently President of the Malaysian Student Association. Her favorite tech companion is her Bose headphones, and her tech hero is Manal al-Sharif, whose advocacy for digital freedom inspires her own journey.  (<a href="https://github.com/alice-smith" target="_blank">@alice-smith</a>)</li>
+    <li><strong>Maia Nebo</strong> – Junior at UW-Madison (<a href="https://github.com/bob-j" target="_blank">@bob-j</a>)</li>
+    <li><strong>Aveyna Mao</strong> – Junior at UW-Madison studying Information Science with a certificate in Data Science (<a href="https://github.com/carolux" target="_blank">@carolux</a>)</li>
+  </ul>
+
+  
