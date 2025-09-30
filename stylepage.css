@@ -84,7 +84,7 @@ nav a:hover {
 /* --- Shared Main Content Wrapper (Used on techhero.html) --- */
 .content-text {
     max-width: 900px;
-    margin: 40px auto; /* CENTERS THE ENTIRE HERO PROFILE SECTION */
+    margin: 40px auto; 
     padding: 30px;
     background-color: white;
     border-radius: 10px;
@@ -184,6 +184,62 @@ nav a:hover {
 .about-preview p {
     text-align: center;
     padding: 0 10px;    
-    font-size: 1.5rem; /* Large font size */
+    font-size: 1.5rem; 
     line-height: 1.2; 
 }
+
+/* --- About Us Page Styles --- */
+
+.about-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-top: 6px solid #007bff; 
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for team members */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Team member card styling */
+.team-member {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+/* Team member names */
+.team-member h3 {
+    font-size: 1.4rem;
+    color: #343a40;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Bio text */
+.team-member p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
