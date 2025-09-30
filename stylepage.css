@@ -1,37 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Body --- */
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    background-color: #f8f9fa; /* Light background for a clean look */
+    background-color: #f8f9fa;
     color: #343a40;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 18px;  /* Slightly larger base font */
     min-height: 100vh;
 }
 
-
+/* --- Header --- */
 .page-header {
-    background-color: #007bff; 
+    background-color: #007bff;
     padding: 30px 20px;
-    text-align: center; /* Crucial: Centers H1, H2, and the image (which are now centered within the header) */
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .page-header h1 {
-    color: white; /* Title color set to white */
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: white;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 5px;
     font-weight: 700;
 }
 
 .page-header h2 {
     color: rgba(255, 255, 255, 0.9);
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     margin-top: 0;
-    margin-bottom: 20px; /* Space between tagline and navigation */
+    margin-bottom: 20px;
 }
 
-/* --- Navigation Styling (Flexbox for reliable centering) --- */
+/* --- Navigation --- */
 nav {
-    margin: 10px auto 20px auto; 
+    margin: 10px auto 20px auto;
     padding: 0;
 }
 
@@ -39,63 +46,71 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: center; /* Centers the navigation links */
-    background-color: #343a40; /* Darker bar for visibility */
+    display: inline-flex;
+    justify-content: center;
+    background-color: #343a40;
     border-radius: 8px;
-    display: inline-flex; /* Use inline-flex so the dark background hugs the links */
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 10px 15px; /* Added more padding for a better look */
+    padding: 10px 15px;
     display: block;
-    transition: color 0.3s;
-    font-size: 1.5rem
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-    color: #ffc107; /* Gold highlight on hover */
+    color: #ffc107;
+    transform: scale(1.05);
 }
 
-/* --- Image Centering and Styling --- */
+/* --- Header Image --- */
 .page-header img {
-    max-width: 90%; /* Ensure responsiveness */
+    max-width: 90%;
     height: auto;
-    display: block; /* Very important: makes margin: auto work */
-    margin: 20px auto 0 auto; /* Crucial for centering block-level images */
+    display: block;
+    margin: 20px auto 0 auto;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    border: 5px solid white; /* Adds a nice white frame */
+    border: 5px solid white;
 }
 
 
-.about-preview {
-    max-width: 700px; /* Constrain width for better readability */
-    margin: 40px auto; /* Crucial: Centers the section block itself */
+.section {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 30px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #007bff; /* Feature line for emphasis */
-}
-
-.about-preview h2 {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #007bff;
     text-align: center;
-    color: #007bff;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 2.0rem;
 }
 
-.about-preview p {
-    text-align: center; /* THIS CENTERS THE CAPTION/PARAGRAPH TEXT */
-    padding: 0 10px;
-    font-size: 1.5rem;
+.section h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* --- Footer --- */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
 }
